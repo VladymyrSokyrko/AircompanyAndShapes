@@ -1,4 +1,4 @@
 package AirCompany;
 
-public class WrongFlightNumber extends RuntimeException {
+class WrongFlightNumber extends RuntimeException {
 }
