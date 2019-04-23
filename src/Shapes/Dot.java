@@ -2,8 +2,8 @@ package Shapes;
 
 public class Dot {
 
-    protected int x;
-    protected int y;
+    private int x;
+    private int y;
 
     Dot (int x, int y){
         this.x = x;

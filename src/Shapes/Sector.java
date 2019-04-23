@@ -2,15 +2,16 @@ package Shapes;
 
 
 public class Sector extends Circle {
-    protected int angle;
+    private int angle;
 
 
     Sector(int x, int y, int radius, int angle) {
         super(x, y, radius);
-        if (radius>0||radius<=360){
+        if (radius>0 && radius<=360){
             this.angle = angle;
+            return;
         }
-//        else throw NumberFormatException e ("incorrect number");
+        throw new IncorrectNumberException();
 
     }
 
